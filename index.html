@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>School Stocks — demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">School Stocks</div>
+      <div class="controls">
+        <button id="editBtn" class="btn">Edit Names</button>
+        <input id="bgPicker" title="Change background" type="color" />
+        <button id="openDemat" class="btn secondary">Open Demat</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="stocksGrid" class="grid"></section>
+    </main>
+
+    <footer class="footer">
+      <small>Data by Finnhub • UI inspired by Groww</small>
+    </footer>
+  </div>
+
+  <!-- Login overlay -->
+  <div id="loginOverlay" class="overlay hidden">
+    <form id="loginForm" class="loginBox">
+      <h2>Enter password</h2>
+      <input id="pw" type="password" placeholder="Password" required />
+      <div class="row">
+        <button type="submit" class="btn">Login</button>
+      </div>
+      <div id="loginError" class="error"></div>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
